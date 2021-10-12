@@ -30,51 +30,58 @@ body{
 header{
     display: flex;
     height: 12vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
     margin-bottom: 0;
 }
 
 .logo{
     cursor: pointer;
+    position: absolute;
     font-family: var(--ff-anton);
     font-size: var(--fs-largefont);
     text-transform: uppercase;
     font-weight: 800;
+    padding: 10px 25px;
 }
 
 .navigation{
-    display: none;
+    position: relative;
 }
 
-/* .nav__link{
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 0%;
+}
+
+.line{
+    width: 30px;
+    height: 3px;
+    z-index: 3;
+    background: black;
+    margin: 5px;
+}
+
+.nav__link{
+    display: flex;
+    display: none;
     list-style-type: none;
     font-family: var(--ff-pacifico);
     font-size: var(--fs-mediumfont);
     text-transform: uppercase;
+
+    position: fixed;
+    background: rgb(253, 217, 253);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    z-index: 5;
 }
 
-.nav__link-item{
-    display: inline-block;
-    margin: 0px 5px;
-}
-
-.nav__links-a{
-    color: black;
-    text-decoration: none;
-    padding: 0px 20px;
-}
-
-.contact_btn{
-    color: rgb(80, 80, 80);
-    margin-left: 30px;
-}
-
-.nav__links-a:hover{
-    background-color: cadetblue;
-    border-radius: 50px;
-} */
 
 
 /* ----------------------------------HERO SECTION---------------------------------- */
