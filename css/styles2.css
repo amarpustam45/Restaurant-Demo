@@ -82,7 +82,7 @@ header{
     text-transform: uppercase;
 
     position: fixed;
-    background: rgb(236, 224, 236);
+    background: #fffdcf;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -480,4 +480,35 @@ footer{
 }
 .item__3{
     background-color: #fdabda;
+}
+
+
+/* -------------------------------------MEDIA QUERIES-------------------------------------- */
+@media (min-width: 450px){
+    .header{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 25px;
+    }
+
+    .logo{
+        font-size: 2.3rem;
+    }
+    
+    .hamburger{
+        display: none;
+    }
+
+    .menuu{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-auto-rows: 500px;  
+    }
+
+    .contact{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "contact contact location"
+        "email email location";
+    }
 }
